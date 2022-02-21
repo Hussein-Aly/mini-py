@@ -4,10 +4,10 @@ import requests
 from twilio.http.http_client import TwilioHttpClient
 from twilio.rest import Client
 
-API_KEY = "27e2586880daa77fc1cc8cdbfc09d161"
+API_KEY = "....."  # Create your API KEY from OpenWeatherMap
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
-ACC_SID = "AC86c55b05dc251c7b7ae59d0e27df48c6"
-AUTH_TOKEN = "1ff9fb7ad1be29ee23360b2608fec859"
+ACC_SID = "...."  # your twilio ACC sid
+AUTH_TOKEN = "...."  # Your twilio token
 proxy_client = TwilioHttpClient(proxy={'http': os.environ['http_proxy'], 'https': os.environ['https_proxy']})
 LAT = 48.306091
 LNG = 14.286440
